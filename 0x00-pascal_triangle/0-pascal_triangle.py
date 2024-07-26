@@ -1,6 +1,17 @@
 #!/usr/bin/python3
 """
-pascals problem solving
+Generates Pascal's triangle up to the nth row.
+
+    Pascal's triangle is a triangular array of binomial coefficients.
+    Each number is the sum of the two directly above it.
+
+    Args:
+        n (int): The number of rows in Pascal's triangle to generate.
+
+    Returns:
+        List[List[int]]: A list of lists representing Pascal's triangle.
+        Each inner list contains the integers of that row in the triangle.
+        Returns an empty list if n <= 0.
 """
 
 
