@@ -7,19 +7,14 @@ Generates Pascal's triangle up to the nth row.
 
     Args:
         n (int): The number of rows in Pascal's triangle to generate.
-
-    Returns:
-        List[List[int]]: A list of lists representing Pascal's triangle.
-        Each inner list contains the integers of that row in the triangle.
-        Returns an empty list if n <= 0.
 """
 
 
 def pascal_triangle(n):
     """
-    solving pascals triangle
+    solving pascals triangle and will return a list of lists of integers
     """
-    if n <= 0:
+    if n <= 0 or not isinstance(n, int):
         return []
 
     triangle = [[1]]
